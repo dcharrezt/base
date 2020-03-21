@@ -24,7 +24,7 @@ Add the following at the end of the list of this two environment variables `expo
 source /opt/jderobot/share/jderobot/gazebo/gazebo-setup.sh
 source /opt/jderobot/share/jderobot/gazebo/gazebo-assets-setup.sh
 source /opt/jderobot/setup.bash
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 ```
 6. With all this done you should be able to launch the simulated drone with mavROS
 
@@ -37,7 +37,7 @@ roslaunch follow_road.launch
 ```
 **WARNING:** check px4.sh is loaded, if it isn't it will throw the following error ** ERROR: cannot launch node of type [mavros/px4.sh]: can't locate node [px4.sh] in package [mavros] **  if that happens, copy the px4.sh file:
 ```
-sudo cp ~/jderobot/src/drivers/gazebo/plugins/solo/px4.sh /opt/ros/kinetic/share/mavros
+sudo cp ~/jderobot/src/drivers/gazebo/plugins/solo/px4.sh /opt/ros/melodic/share/mavros
 ```
 
 You should have a simulated drone in gazebo running.
